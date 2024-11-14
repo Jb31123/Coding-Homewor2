@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSCI 1101 Conditional Statements and Loops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/c05.css">
+</head>
+<body>
+    <div id="page">
+        <h1 id="header">List</h1>
+        <h2>Buy groceries</h2>
+        <ul>
+            <li class="cool">fresh figs</li>
+            <li>bacon</li>
+            <li>ketchup</li>
+            <li>pine nuts</li>
+            <li class="cool">honey</li>
+            <li class="cool">kale</li>
+            <li>balsamic vinegar</li>
+        </ul>
+    </div>
+    <script>
+        var listItems = document.getElementsByTagName('li'); 
+        var heading = document.querySelector('h2'); 
+        var headingText = heading.firstChild.nodeValue; 
+        var totalItems = listItems.length; 
+        var newHeading = headingText + '<span>' + totalItems + '</span>'; 
+
+        heading.innerHTML = newHeading;
+        
+    </script>
+</body>
+</html>
